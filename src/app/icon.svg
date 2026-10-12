@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Nexora">
+  <!--
+    The sidebar mark: Lucide's "radio" glyph on a rounded tile.
+
+    Colours are hex rather than the oklch() custom properties the app uses,
+    because a favicon is rendered outside the document — there is no :root to
+    resolve a var() against, and favicon rasterisers do not reliably support
+    oklch(). #22b5e1 is oklch(0.72 0.13 225) and #0b0d10 is
+    oklch(0.158 0.008 255), so the mark matches the console exactly.
+
+    The tile is opaque rather than the UI's primary/15 tint: a 15% wash would
+    be nearly invisible against a browser tab, and the solid dark square keeps
+    the mark legible on both light and dark browser chrome.
+
+    Stroke is 2.6 in the glyph's own 24-unit space (Lucide draws at 2). At a
+    16px tab icon the default weight renders as a grey smudge; the heavier
+    stroke keeps the arcs separable.
+  -->
+  <rect width="32" height="32" rx="7" fill="#0b0d10" />
+  <g
+    transform="translate(6 6) scale(0.8333)"
+    fill="none"
+    stroke="#22b5e1"
+    stroke-width="2.6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path d="M16.247 7.761a6 6 0 0 1 0 8.478" />
+    <path d="M19.075 4.933a10 10 0 0 1 0 14.134" />
+    <path d="M4.925 19.067a10 10 0 0 1 0-14.134" />
+    <path d="M7.753 16.239a6 6 0 0 1 0-8.478" />
+    <circle cx="12" cy="12" r="3" fill="#22b5e1" stroke="none" />
+  </g>
+</svg>
